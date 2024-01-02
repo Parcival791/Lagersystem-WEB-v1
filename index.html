@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>
+            Lagersystem
+        </title>
+        <link rel="icon" href="./assets/favicon.ico">
+        <style>
+            #header{
+                border-color: black;
+                border-width: 3px;
+                border-style: solid;
+                width: 100%;
+                padding: 1px;
+            }
+            #header-logo {
+                float: left;
+            }
+            #header-search {
+                float: right;
+                padding: 6px;
+                margin-top: 8px
+            }
+            #header-stats {
+                border-color: gray;
+                border-width: 1px;
+                border-style: groove;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-bottom: 0px;
+                padding-top: 0px;
+                height: 78px;
+                background-color: darkgray;
+                margin-left: 30%;
+            }
+            #main-top-buttons{
+                padding-top: 10px;
+                width: 100%;
+            }
+            button{
+                padding: 5px;
+            }
+
+            p,div{
+                display: inline-block;
+            }
+            tr:nth-child(even) {
+                background-color: #D6EEEE;
+            }
+            tr:hover {background-color: #205066;}
+            table, td, th {
+                border-collapse: collapse;
+                padding: 8px;
+                border: 1px solid black;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+         <div id="header-logo">
+            <img src="./assets/logo.png">
+         </div>
+         <div id="header-stats">
+            <p>Insgesamte Teile: <p id="header-stats-totalcount">2345</p></p>
+            <p>Kategorien: <p id="header-stats-categoriescount">123</p></p>
+         </div>
+         <div id="header-search">
+            <input type="text" placeholder="Search..">
+         </div>
+        </div>
+        <div id="main-top">
+            <div id="main-top-buttons" class="center">
+                <button id="button-add">Hinzufügen</button>
+                <button id="button-add-ai">Objekterkennung</button>
+                <button id="button-modify-general">Ändern</button>
+            </div>
+        </div>
+        <hr>
+        <div id="main-table">
+            <table id="table">
+                <tr>
+                    <th>Name</th>
+                    <th>Kategorie</th>
+                    <th>Anzahl</th>
+                    <th>Aktionen</th>
+                </tr>
+                <tr>
+                    <td>hi</td>
+                    <td>hey</td>
+                    <td>bye</td>
+                </tr>
+            </table>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
